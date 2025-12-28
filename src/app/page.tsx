@@ -63,6 +63,7 @@ const gradingPolicy = [
   "Your Akify standups will be due twice per week.  The deadline to complete your Akify standup will be Tuesday at 3:59pm and Friday at 3:59pm",
   "All Linear cards must be completed by the end of the semester.",
   "Late Akify standups are not accepted.",
+  "It is very possible to get an 'A' in this class.  There is no curve and we do not use norm-referenced grading.  Note: Professor Chilton almost never gives out A+ grades.  The last A+ she gave out went to Barack Obama when he took UI Design.",
 ];
 
 const tools = [
