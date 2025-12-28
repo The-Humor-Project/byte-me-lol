@@ -87,7 +87,7 @@ export default function Home() {
     <main className="page">
       <div className="page__content">
         <header className="hero reveal" style={revealStyle(0)}>
-          <p className="eyebrow">Spring 2026 - Assignments</p>
+          <p className="eyebrow">Spring 2026 - Columbia University</p>
           <h1>
             The Humor Project<span className="tm">™</span>
           </h1>
