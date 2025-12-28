@@ -21,6 +21,9 @@ const courseSchedule =
     "https://tinyurl.com/columbia-university \n\n" +
     "Use the 'Weekly Schedule' page on this site for meeting agendas and assignments";
 
+const exams =
+  "There are no exams in this course.  Checkout the 'Grading breakdown' and 'Grading policy' sections for more info.";
+
 const credits =
   "This is a three (3) credit class.  Use the following Vergil links to sign-up: \n\n" +
     "COMS3998 section 60: https://vergil.columbia.edu/vergil/course/20261/73468/15161 \n" +
@@ -78,6 +81,10 @@ const tools = [
 const lectureRecordings =
   "Lectures are not recorded, but the transcripts are made available to Akify.  You can " +
     "ask Akify to explain or summarize the lecture content for you.";
+
+const communication =
+  "We use Slack for all communication in this course.  Use the following link to join our Slack: \n\n" +
+    "https://tinyurl.com/the-humor-project-slack";
 
 const revealStyle = (delay: number): CSSProperties => ({
   animationDelay: `${delay}ms`,
@@ -150,6 +157,15 @@ export default function Home() {
         <section
           className="card reveal"
           style={revealStyle(720)}
+          aria-labelledby="exams-title"
+        >
+          <h2 id="exams-title">Exams</h2>
+          <p className="lead">{renderTextWithLineBreaks(exams)}</p>
+        </section>
+
+        <section
+          className="card reveal"
+          style={revealStyle(840)}
           aria-labelledby="credits-title"
         >
           <h2 id="credits-title">Credits</h2>
@@ -158,7 +174,7 @@ export default function Home() {
 
         <section
           className="card reveal"
-          style={revealStyle(840)}
+          style={revealStyle(960)}
           aria-labelledby="grading-title"
         >
           <h2 id="grading-title">Grading breakdown</h2>
@@ -171,7 +187,7 @@ export default function Home() {
 
         <section
           className="card reveal"
-          style={revealStyle(960)}
+          style={revealStyle(1080)}
           aria-labelledby="late-policy-title"
         >
           <h2 id="late-policy-title">Grading policy</h2>
@@ -184,7 +200,7 @@ export default function Home() {
 
         <section
           className="card reveal"
-          style={revealStyle(1080)}
+          style={revealStyle(1200)}
           aria-labelledby="tools-title"
         >
           <h2 id="tools-title">Tools required</h2>
@@ -197,11 +213,20 @@ export default function Home() {
 
         <section
           className="card reveal"
-          style={revealStyle(1200)}
+          style={revealStyle(1320)}
           aria-labelledby="lecture-recordings-title"
         >
           <h2 id="lecture-recordings-title">Lecture recordings</h2>
           <p className="lead">{renderTextWithLineBreaks(lectureRecordings)}</p>
+        </section>
+
+        <section
+          className="card reveal"
+          style={revealStyle(1440)}
+          aria-labelledby="communication-title"
+        >
+          <h2 id="communication-title">Communication</h2>
+          <p className="lead">{renderTextWithLineBreaks(communication)}</p>
         </section>
       </div>
     </main>
